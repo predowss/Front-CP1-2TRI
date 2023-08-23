@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+    color: #000;
+  }
+
+.about-section {
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image,
+.about-text {
+    width: 48%; /* Ajuste de acordo com suas necessidades */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-text {
+    padding: 1em;
+    text-align: left;
+}
+
+.img_prod {
+    padding: 2em 0 2em 1em;
+}
+
+.sobr_ns {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sobr_ns_txt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+/* Media Query para telas menores */
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column-reverse; /* Inverte a ordem das divs */
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .img_prod {
+        width: 100%;
+    }
+
+    .sobr_ns {
+        font-size: 1.5em; /* Ajuste conforme desejado */
+    }
+
+    .sobr_ns_txt {
+        font-size: 1em; /* Ajuste conforme desejado */
+    }
+}

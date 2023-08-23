@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/login.css">
+    
+    <title>Vinheria Agnello - Login/Cadastro</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h2><a href="home.html">Agnello</a></h2>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="vinhos.html">Vinhos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login" class="auth-section">
+            <h2>Login</h2>
+            <form id="loginForm" method="post" onsubmit="return validateLoginForm();">
+                <input type="text" name="username" placeholder="Usuário" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit" class="btn-auth">Entrar</button>
+            </form>
+            
+        </section>
+
+        <section id="cadastro" class="auth-section">
+            <h2>Cadastro</h2>
+            <form id="registerForm" method="post" onsubmit="return validateRegisterForm()">
+                <input type="text" name="username" placeholder="Usuário" required>
+                <input type="email" name="email" placeholder="E-mail" required>
+                <input type="password" name="password" placeholder="Senha" required>
+                <button type="submit" class="btn-auth">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <p>&copy; 2023 Vinheria Agnello</a></p>
+    </footer>
+</body>
+</html>
+<script src="./js/script_login.js"></script>
